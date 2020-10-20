@@ -1,5 +1,1 @@
 Even a monkey can figure out how to use git.
-
-
-This is changed by branch1
-This changed is by branch2
