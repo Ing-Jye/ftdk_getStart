@@ -1,9 +1,5 @@
 print("Hello py")
 
-print("the third try")
+print("chan in work dic")
 
-
-
-
-
-print("is that true")
+print("I also make exchange on hello.py")
