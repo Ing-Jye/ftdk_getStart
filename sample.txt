@@ -1,2 +1,6 @@
 Even a monkey can figure out how to use git.
+<<<<<<< HEAD
 This is made by master
+
+This is made by Branch
+>>>>>>> Branch
