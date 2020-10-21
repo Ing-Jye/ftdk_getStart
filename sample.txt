@@ -1,3 +1,9 @@
 Even a monkey can figure out.
 
+<<<<<<< HEAD
 This is made ny master.
+=======
+This is made by issue2.
+
+This is made bt issue2 again.
+>>>>>>> issue2
