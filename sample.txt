@@ -21,4 +21,9 @@ lll
 =======
 
 change 3 by issue.
+<<<<<<< HEAD
 >>>>>>> 52547ca... commit 3 by issue
+=======
+
+change 4 by issue.
+>>>>>>> 013ca5d... commit 4 by issue
