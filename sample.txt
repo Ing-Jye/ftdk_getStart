@@ -1,9 +1,1 @@
-This is for test.
-
-<<<<<<< HEAD
-Second change by master.
-=======
-Second change is made by issue.
->>>>>>> issue
-
-This is for merge in master
+This is for test of rebase.
