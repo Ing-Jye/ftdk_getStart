@@ -26,4 +26,9 @@ change 3 by issue.
 =======
 
 change 4 by issue.
+<<<<<<< HEAD
 >>>>>>> 013ca5d... commit 4 by issue
+=======
+
+change 5 by issue.
+>>>>>>> e11cc1e... commit 5 by issue
