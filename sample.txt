@@ -13,7 +13,12 @@ change 1 by issue.
 =======
 
 change 2 by issue.
+<<<<<<< HEAD
 >>>>>>> 76ea020... commit 2 by issue
 
 lll
 3333
+=======
+
+change 3 by issue.
+>>>>>>> 52547ca... commit 3 by issue
