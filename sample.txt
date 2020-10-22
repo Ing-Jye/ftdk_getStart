@@ -1,3 +1,7 @@
 This is for test.
 
+<<<<<<< HEAD
 This change is made by master.
+=======
+this change is made by issue.
+>>>>>>> issue
