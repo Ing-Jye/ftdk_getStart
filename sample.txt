@@ -1,3 +1,7 @@
 This is for test.
 
+<<<<<<< HEAD
 Second change by master.
+=======
+Second change is made by issue.
+>>>>>>> issue
