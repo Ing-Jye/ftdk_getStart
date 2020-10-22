@@ -1,3 +1,5 @@
 This is for test of rebase.
 
 change 1 by master.
+
+change 2 by master.
