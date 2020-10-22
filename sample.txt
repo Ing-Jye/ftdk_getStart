@@ -1,11 +1,39 @@
 This is for test of rebase.
 
 
+<<<<<<< HEAD
 change 1 by master.
 
 change 2 by master.
 
 change 3 by master.
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 884daf9... fix conflict by issue
 
 change 1 by issue.
 
