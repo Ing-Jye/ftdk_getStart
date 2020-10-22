@@ -1,7 +1,11 @@
 This is for test of rebase.
 
+<<<<<<< HEAD
 change 1 by master.
 
 change 2 by master.
 
 change 3 by master.
+=======
+change 1 by issue.
+>>>>>>> 3e8022b... commit 1 by issue
