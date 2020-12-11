@@ -1,0 +1,103 @@
+class Solution {
+public:
+    double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
+        int total_size = (nums1.size() + nums2.size());
+        int to_be_filled_idx = total_size / 2;
+        int filling_idx = 0;
+        int is_odd = (total_size % 2) == 0? 0 : 1;
+        int idx1 = -1, idx2 = -1;
+        double median = 0;
+        
+/*
+        while(to_be_filled_idx != 1){
+            filling_idx = to_be_filled_idx / 2;
+            
+//             idx1 = (idx1 == 0)? idx1 - 1 : idx1;
+//             idx2 = (idx2 == 0)? idx2 - 1 : idx2;
+            if(idx1 < (nums1.size() - 1) && (idx2 < nums2.size() - 1)){
+                if(nums1[idx1 + filling_idx] <= nums2[ idx2 + filling_idx]) {
+                    idx1 = idx1 + filling_idx;
+                }
+                else{
+                    idx2 = idx2 + filling_idx;
+                }
+            
+                to_be_filled_idx -= filling_idx;
+            }
+            else if(idx1 < nums1.size() - 1){
+                idx1 += to_be_filled_idx - 1;
+                to_be_filled_idx = 1;
+            }
+            else{
+                idx2 += to_be_filled_idx - 1;
+                to_be_filled_idx = 1;
+            }
+        }
+        
+//        idx1 = (idx1 == 0)? idx1 - 1 : idx1;
+//        idx2 = (idx2 == 0)? idx2 - 1 : idx2;
+        
+*/        
+        if((idx1 < (nums1.size() - 1)) && (idx2 < (nums2.size() - 1))){
+            if(nums1[idx1 + 1] <= nums2[idx2 + 1]){
+                idx1 += 1;
+            }
+            else{
+                idx2 += 1;
+            }
+        }
+        else if(idx1 < (nums1.size() - 1)){
+            idx1 += 1;
+        }
+        else{
+            idx2 += 1;
+        }
+        
+        if(is_odd){
+            if(idx1 < (nums1.size() - 1) && (idx2 < nums2.size() - 1)){
+                if(nums1[idx1 + 1] <= nums2[idx2 + 1]){
+                    median = nums1[idx1 + 1];
+                }
+                else{
+                    median = nums2[idx2 + 1];
+                }
+            }
+            
+            else if(idx1 < (nums1.size() - 1)){
+                median = nums1[idx1 + 1];
+            }
+            else{
+                median = nums2[idx2 + 1];
+            }
+        }
+/*        
+        else{
+            if(idx1 < (nums1.size() - 1) && (idx2 < nums2.size() - 1)){
+                int fir = 0;
+                int sed = 0;
+                fir = (nums1[idx1 + 1] >= nums2[idx2 + 1])? nums1[idx1 + 1] : nums2[idx2 + 1];
+                sed = (nums1[idx1] >= nums2[idx2])? nums1[idx1] : nums2[idx2];
+            
+                median = (fir + sed) / 2.0;
+            }
+            else if(idx1 < (nums1.size() - 1)){
+                int fir = 0;
+                int sed = 0;
+                fir = nums1[idx1 + 1];
+                sed = nums1[idx1];
+            
+                median = (fir + sed) / 2.0;
+            }
+            else{
+                int fir = 0;
+                int sed = 0;
+                fir = nums2[idx2 + 1];
+                sed = nums2[idx2];
+                
+                median = (fir + sed) / 2.0;
+            }
+        }
+*/
+        return median;
+    }
+};
